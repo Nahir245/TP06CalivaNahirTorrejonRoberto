@@ -21,13 +21,15 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto{" +
-                "codigo='" + codigo + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", precioUnitario=" + precioUnitario +
-                ", origenFabricacion=" + origenFabricacion +
-                ", categoria=" + categoria +
-                '}';
+        return "codigo = " + codigo + " descripcion = " + descripcion + " precioUnitario = " + precioUnitario + " origenFabricacion=" + origenFabricacion + " categoria = " + categoria;
+    }
+
+    public double getPrecioUnitario() {
+        return precioUnitario;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
     }
 }
 

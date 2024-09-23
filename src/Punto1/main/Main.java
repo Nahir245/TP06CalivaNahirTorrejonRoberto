@@ -4,32 +4,29 @@ import Punto1.model.Producto;
 import Punto1.util.Categoria;
 import Punto1.util.Origen;
 
+import java.util.ArrayList;
+
+
 public class Main {
- public static void main(String[] args) {
-	 
-	 ArrayList<Producto> productos = new ArrayList<>();
-     
-     // Agregar 5 objetos Producto
-     
-     for (Producto producto : productos) {
-         System.out.println(producto);
- 
-     
- //ArrayList<Producto> productos = new ArrayList<>();
-	    	
-	       // productos.add(new Producto("001", "Smartphone", 1200.0, Origen.CHINA, Categoria.TELEFONIA));
-	        //productos.add(new Producto("002", "Laptop", 2500.0, Origen.ARGENTINA, Categoria.INFORMATICA));
-	        // productos.add(new Producto("003", "Refrigerador", 1500.0, Origen.BRASIL, Categoria.ELECTROHOGAR));
-	        // productos.add(new Producto("004", "Taladro", 200.0, Origen.URUGUAY, Categoria.HERRAMIENTAS));
-	        // productos.add(new Producto("005", "Tablet", 800.0, Origen.CHINA, Categoria.TELEFONIA));
+    public static void main(String[] args) {
+        ArrayList<Producto> productos = new ArrayList<>();
+        
+      
 
-	        // for (Producto producto : productos) {
-	           //  System.out.println(producto);
-	        }
-	 }
-	}
+       productos.add(new Producto("1", "celular", 50000, Origen.ARGENTINA, Categoria.TELEFONIA));
+       productos.add(new Producto("2", "computadora", 980000, Origen.CHINA, Categoria.INFORMATICA));
+       productos.add(new Producto("3", "cocina", 80000, Origen.BRASIL, Categoria.ELECTROHOGAR));
+       productos.add(new Producto("4", "taladro", 85000, Origen.URUGUAY, Categoria.HERRAMIENTAS));
+       productos.add(new Producto("5", "amoladora", 150000, Origen.ARGENTINA, Categoria.HERRAMIENTAS));
 
-	 
-	 
-	 
-	 
+        for (Producto producto : productos) {
+            System.out.println(producto);
+        }
+    }
+}
+
+
+
+
+
+
